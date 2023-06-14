@@ -1,0 +1,47 @@
+input {
+  margin-left: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 70px;
+  margin-bottom: 0;
+
+  display: flex;
+  gap: 5px;
+
+  & li {
+    width: 43px;
+    padding: 2px 5px;
+  }
+}
+
+.grey {
+  & li {
+    background-color: grey;
+  }
+}
+
+.easy {
+  & li {
+    background-color: grey;
+  }
+  & :nth-child(1) {
+    background-color: red;
+  }
+}
+
+.medium {
+  & li {
+    background-color: grey;
+  }
+  & :nth-child(-n + 2) {
+    background-color: yellow;
+  }
+}
+
+.strong {
+  & :nth-child(n) {
+    background-color: green;
+  }
+}
