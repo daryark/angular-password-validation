@@ -15,7 +15,7 @@ export class AppComponent {
     const p = this.myForm.value.password;
 
     const easy = /^(?:\d+|[a-z]+|[^a-z\d]+)$/i;
-    const medium = /^(?:[a-z\d]+|([^a-z]+\/)|([^/d]+\/))$/i;
+    const medium = /^(?:[a-z\d]+|[^a-z]+|[^\d]+)$/i;
 
     if (p === '') return 'grey';
     else if (p.match(easy)) return 'easy';
