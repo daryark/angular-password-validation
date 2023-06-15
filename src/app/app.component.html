@@ -1,13 +1,12 @@
 <div>
   <form [formGroup]="myForm">
-    <label id="password">Password</label>
+    <label id="password">Password validation</label>
     <input
       placeholder="Password"
       for="password"
       formControlName="password"
       #input
     />
-    <button type="submit">Submit</button>
   </form>
   <ul [class]="passwordCheck()">
     <li></li>
@@ -15,5 +14,3 @@
     <li></li>
   </ul>
 </div>
-
-<!-- (keyup)="onChange(input.value)" -->

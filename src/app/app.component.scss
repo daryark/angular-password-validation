@@ -1,17 +1,35 @@
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 16px);
+}
+
+label {
+  display: block;
+  margin: 0 4px 10px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
 input {
-  margin-left: 10px;
+  padding: 3px;
+  border: none;
+  outline: 1px solid grey;
+  outline-offset: 2px;
 }
 
 ul {
   list-style: none;
-  padding-left: 70px;
-  margin-bottom: 0;
+  padding-left: 0;
+  margin: 0;
 
   display: flex;
-  gap: 5px;
 
   & li {
-    width: 43px;
+    width: 48px;
     padding: 2px 5px;
   }
 }
