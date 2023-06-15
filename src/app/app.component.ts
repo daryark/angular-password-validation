@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -11,15 +11,11 @@ export class AppComponent {
     password: new FormControl(''),
   });
 
-  // match(p: string, reg: RegExp) {
-  //   return p.match(reg);
-  // }
-
   passwordCheck(): string {
     const p = this.myForm.value.password;
 
     const easy = /^(?:\d+|[a-z]+|[^a-z\d]+)$/i;
-    const medium = /^(?:[a-z\d]+|[^a-z]+|[^/d]+)$/i;
+    const medium = /^(?:[a-z\d]+|([^a-z]+\/)|([^/d]+\/))$/i;
 
     if (p === '') return 'grey';
     else if (p.match(easy)) return 'easy';
