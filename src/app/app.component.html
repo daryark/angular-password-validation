@@ -13,4 +13,9 @@
     <li></li>
     <li></li>
   </ul>
+  <div style="height: 20px">
+    <p *ngIf="myForm.invalid" style="color: tomato">
+      No cyrillic letters allowed!
+    </p>
+  </div>
 </div>
