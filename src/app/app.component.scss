@@ -40,6 +40,12 @@ ul {
   }
 }
 
+.less-eight {
+  & li {
+    background-color: red;
+  }
+}
+
 .easy {
   & li {
     background-color: grey;
