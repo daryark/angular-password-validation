@@ -1,0 +1,27 @@
+@use "@angular/material" as mat;
+@include mat.core();
+
+$myApp-primary: mat.define-palette(mat.$green-palette, A700);
+$myApp-accent: mat.define-palette(mat.$yellow-palette, A700);
+$myApp-warn: mat.define-palette(mat.$red-palette, A700);
+
+$myApp-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $myApp-primary,
+      accent: $myApp-accent,
+      warn: $myApp-warn,
+    ),
+  )
+);
+
+@include mat.all-component-themes($myApp-theme);
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

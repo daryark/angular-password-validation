@@ -1,21 +1,4 @@
 <div>
-  <form [formGroup]="myForm">
-    <label for="password">Password validation</label>
-    <input
-      placeholder="Password"
-      id="password"
-      formControlName="password"
-      #input
-    />
-  </form>
-  <ul [class]="passwordCheck()">
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-  <div style="height: 20px">
-    <p *ngIf="myForm.invalid" style="color: tomato">
-      No cyrillic letters allowed!
-    </p>
-  </div>
+  <h1>Password validation</h1>
+  <app-password></app-password>
 </div>

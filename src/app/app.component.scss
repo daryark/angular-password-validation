@@ -3,69 +3,9 @@ div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 16px);
+  height: calc(100vh - 16px - 40px);
 }
 
-label {
-  display: block;
-  margin: 0 4px 10px;
-
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-}
-
-input {
-  padding: 3px;
-  border: none;
-  outline: 1px solid grey;
-  outline-offset: 2px;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-
-  display: flex;
-
-  & li {
-    width: 48px;
-    padding: 2px 5px;
-  }
-}
-
-.grey {
-  & li {
-    background-color: grey;
-  }
-}
-
-.less-eight {
-  & li {
-    background-color: red;
-  }
-}
-
-.easy {
-  & li {
-    background-color: grey;
-  }
-  & :nth-child(1) {
-    background-color: red;
-  }
-}
-
-.medium {
-  & li {
-    background-color: grey;
-  }
-  & :nth-child(-n + 2) {
-    background-color: yellow;
-  }
-}
-
-.strong {
-  & :nth-child(n) {
-    background-color: green;
-  }
+h1 {
+  text-align: center;
 }
